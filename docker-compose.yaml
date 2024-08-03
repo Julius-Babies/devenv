@@ -1,0 +1,10 @@
+services:
+    devenv:
+        build: .
+        container_name: devenv
+        volumes:
+            - "./d/cert:/cert"
+            - "./d/conf:/conf"
+        ports:
+            - "9080:80"
+            - "9443:443"
