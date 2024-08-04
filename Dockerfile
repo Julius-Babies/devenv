@@ -10,6 +10,7 @@ RUN apt-get install openssl -y
 COPY ./start.sh /app/start.sh
 COPY ./nginx/ssl.conf /ssl.conf
 COPY ./template.conf /app/template.conf
+COPY ./domain.v3.ext /app/domain.v3.ext
 
 EXPOSE 80 443
 
